@@ -1,4 +1,4 @@
-![image](https://github.com/lddzbn/-data-analysis/assets/160203933/5d88592a-8c49-4a32-b352-58d2b1a3d716)#Excel 学习思维导图
+![image](https://github.com/lddzbn/-data-analysis/assets/160203933/e8b864ea-4d60-4363-b9bd-04eb1998f009)![image](https://github.com/lddzbn/-data-analysis/assets/160203933/5d88592a-8c49-4a32-b352-58d2b1a3d716)#Excel 学习思维导图
 
 ![屏幕截图 2024-02-17 211038](https://github.com/lddzbn/-data-analysis/assets/160203933/3618b304-3d43-4f84-8a47-8883e17dee9f)
 
@@ -122,4 +122,24 @@ vlookup只会返回第一个被查找的值
 先做数据透视表，再vlookup引用，记得引用区域得设为绝对地址，可以呈现多个数据透视表的结果
 
 **index和match的聚合运算**
+
+**match**
+
+![image](https://github.com/lddzbn/-data-analysis/assets/160203933/41fa9973-35cd-4ff4-b60b-8e4f85b9b5b3)
+
+合并单元格要取消
+
+函数主要功能是寻找要计算的单元格在制定的区域的哪一行或者是列
+
+**index**
+
+![image](https://github.com/lddzbn/-data-analysis/assets/160203933/6c48c934-be2a-4971-9eba-1f240775f273)
+
+指定区域某行某列的值
+
+**两者嵌套**
+
+逻辑，首先让match抓取某个表格表头的行和列的位置，传给index从而抓取一系列相关的数据
+
+尤为注意其中的地址的绝对性
 
