@@ -1,4 +1,4 @@
-#Excel 学习思维导图
+![image](https://github.com/lddzbn/-data-analysis/assets/160203933/5d88592a-8c49-4a32-b352-58d2b1a3d716)#Excel 学习思维导图
 
 ![屏幕截图 2024-02-17 211038](https://github.com/lddzbn/-data-analysis/assets/160203933/3618b304-3d43-4f84-8a47-8883e17dee9f)
 
@@ -51,4 +51,75 @@
 
 **插入切片器**：点击任意切片即可转换数据，一种筛选器。特点是可以在数据透视表外的工作表联动使用
 
+**数据透视表**：点击数据透视图，然后点击分析，接着可以看到数据透视表。
+
+### 六、使用函数
+
+**sum函数**
+
+SUM(number1,number2,…) SUM(列名）SUM(行名） 
+
+SUM(单个或多个单元格）SUM(列的名称如：A:A）SUM（行的名称如：1:1)
+
+**sumif函数**
+
+sumif（条件判断区域，条件，数值计算区域）
+
+**快速填充**
+
+F4锁定单元格，右键填充菜单
+
+**格式技巧**
+
+日期可以加上数字，达到前进或者后退一天的作用（用纯文本格式可以显示数字，从1900年第一天开始）
+
+**环比和同比**
+
+![image](https://github.com/lddzbn/-data-analysis/assets/160203933/7b5f0f8f-fa47-47d8-9438-e46e9f28f4d0)
+
+**年月日函数**
+
+![image](https://github.com/lddzbn/-data-analysis/assets/160203933/3c4b9847-b462-4801-97fc-c59590d6ea65)
+
+**date**
+
+![image](https://github.com/lddzbn/-data-analysis/assets/160203933/756db859-cdc8-4f80-8d01-d11e2e2bdc8e)
+
+**提示，永远不要用excel日期去存储日期，要改成字符串格式**
+
+**只显示月份和年份的日期需要到自定义格式中去修改**
+
+**sumifs函数技巧**
+
+在进行函数的相连接要使用双引号和&连接
+
+例如=SUMIFS('拌客源数据1-8月'!J:J,'拌客源数据1-8月'!A:A,">="&DATE(YEAR(B39),MONTH(B39),1),'拌客源数据1-8月'!H:H,"美团",'拌客源数据1-8月'!A:A,"<="&DATE(YEAR(B39),MONTH(B39)+1,1)-1)
+
+这其中的大于等于号就用双引号，后面接的date函数就用&连接
+
+**sum与subtotal**
+
+sum函数不能对筛选后的表格进行求和，但是subtotal函数能对筛选后的表格进行求和
+
+**if函数**
+
+![image](https://github.com/lddzbn/-data-analysis/assets/160203933/957a925f-7269-449d-9010-3ac3f7bfd84f)
+
+**vlookup函数**
+
+![image](https://github.com/lddzbn/-data-analysis/assets/160203933/6e16e598-e5aa-49f4-bf84-d69d072f72a9)
+
+vlookup的条件必须在查找区域的第一列
+
+使用通配符和&进行查找
+
+vlookup只会返回第一个被查找的值
+
+占位符？？？连用或者*
+
+**vlookup与数据透视表**
+
+先做数据透视表，再vlookup引用，记得引用区域得设为绝对地址，可以呈现多个数据透视表的结果
+
+**index和match的聚合运算**
 
